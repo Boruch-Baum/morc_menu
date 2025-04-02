@@ -63,18 +63,19 @@ Optionally, for aligning / positioning the menu at the current mouse pointer:
   to follow any supplemental instructions of the
   packager.
 
-  Otherwise, if you wish to install morc_menu for system-wide use, available to all users: Download the package zip file; Unzip it,; cd into the created folder morc_menu-master, and; Run 'sudo make install'. How then to create system-wide keybindings for morc_menu and how to propagate them is a matter too system-specific and too dependent on your use-case for this readme to fully address.  An example keybinding for use with the i3 window manager would be to modify the /etc/skel/.i3/config file and ${HOME}/.i3/config files to include a statement in the form: 'bindsym $mod+z exec morc_menu'
+  Otherwise, if you wish to install morc_menu for system-wide use, available to all users: Download the package zip file; Unzip it,; cd into the created folder morc_menu-master, and; Run 'sudo make install'. How then to create system-wide keybindings for morc_menu and how to propagate them is a matter too system-specific and too dependent on your use-case for this readme to fully address.  An example keybinding for use with the i3 window manager would be to modify the /etc/skel/.i3/config file and ${HOME}/.i3/config files to include a statement in the form: `bindsym $mod+z exec morc_menu`
 
 
   For personal use, without installing system-wide, and without requiring administrator privileges, manually install the script  by performing the following: download the package zip file; unzip it; copy the script file 'morc_menu' to a convenient location, for
-  example, somewhere on your ${PATH}; Make it executable by running 'chmod +x /path/to/file'; Optionally, copy
-  the script's associated config file to ${HOME}/.config/morc_menu; Optionally, copy the script's associated man page to somewhere your system will recognize (run command 'manpath', and if you can not place it in any of those places, run 'man manpath'
+  example, somewhere on your `${PATH}`; Make it executable by running 'chmod +x /path/to/file'; Optionally, copy
+  the script's associated config file to `${HOME}/.config/morc_menu`; Optionally, copy the script's associated man page to somewhere your system will recognize (run command 'manpath', and if you can not place it in any of those places, run 'man manpath'
   to see how to set $MANPATH), and; Create a keybinding for the script. An example keybinding for use with the
-  i3 window manager would be to modify your ${HOME}/.i3/config file to include a statement in the
+  i3 window manager would be to modify your `${HOME}/.i3/config file` to include a statement in the
   form:
+````
      bindsym $mod+z
              exec "${HOME}/path/to/morc_menu"
-
+````
 ## Customization
   This script offers many ways to customize the menu's
   content and 'look' ('skin'). Refer to the script's
